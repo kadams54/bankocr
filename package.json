@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "description": "Converts scanned data to account numbers.",
   "main": "src/index.js",
-  "author": "Kyle Adams",
-  "license": "MIT"
+  "bin": {
+    "bank-ocr": "./src/index.js"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint src test"
+  },
+  "author": "Kyle Adams &lt;kadams54@gmail.com&gt;",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "mocha": "^3.4.2"
+  }
 }
