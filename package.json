@@ -1,0 +1,8 @@
+{
+  "name": "bank-ocr",
+  "version": "1.0.0",
+  "description": "Converts scanned data to account numbers.",
+  "main": "src/index.js",
+  "author": "Kyle Adams",
+  "license": "MIT"
+}
