@@ -1,10 +1,10 @@
 {
-  "name": "bank-ocr",
+  "name": "bankocr",
   "version": "1.0.0",
   "description": "Converts scanned data to account numbers.",
   "main": "src/index.js",
   "bin": {
-    "bank-ocr": "./src/index.js"
+    "bankocr": "./src/index.js"
   },
   "scripts": {
     "test": "mocha",
