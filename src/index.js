@@ -1,16 +1,13 @@
-var program = require('commander');
-var app = require('./app');
+#!/usr/bin/env node
+'use strict';
 
-program
-  .version('1.0.0')
-  .option(
-    '-i, --input <path>',
-    'The input file with the scanned account numbers.'
-  )
-  .option(
-    '-o, --output <path>',
-    'The output file for the account numbers post-OCR.'
-  )
-  .parse(process.argv);
+const program = require('commander');
+const app = require('./app');
 
-process.exit(app.run(program.input, program.output));
+program.version('1.0.0').arguments('<file>').parse(process.argv);
+
+if (program.args.length === 0) program.help();
+
+const accounts = app.run(program.args[0]);
+console.log(`Performed OCR on ${accounts.length} accounts.`);
+accounts.forEach(account => console.log(`${account}`));

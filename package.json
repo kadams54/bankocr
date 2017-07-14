@@ -7,13 +7,16 @@
     "bankocr": "./src/index.js"
   },
   "scripts": {
-    "test": "mocha",
-    "lint": "eslint src test"
+    "test": "jest",
+    "lint": "eslint src test",
+    "app": "./src/index.js"
   },
   "author": "Kyle Adams &lt;kadams54@gmail.com&gt;",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.11.0",
-    "mocha": "^3.4.2"
+    "commander": "^2.11.0"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
   }
 }
