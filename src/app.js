@@ -1,5 +1,5 @@
 const fs = require('fs');
-const accountString = require('./accountString');
+const account = require('./account');
 
 module.exports = {
   run: function(inputFile) {
@@ -11,6 +11,6 @@ module.exports = {
       accountStrs.push(lines.splice(0, 4).join('\n'));
     }
     // Parse each accountString into an OCR'd account number.
-    return accountStrs.map(accountString.parse);
+    return accountStrs.map(account.parse);
   }
 };
