@@ -14,9 +14,9 @@
   "author": "Kyle Adams &lt;kadams54@gmail.com&gt;",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.11.0"
+    "commander": "^4.1.0"
   },
   "devDependencies": {
-    "jest": "^20.0.4"
+    "jest": "^24.9.0"
   }
 }
